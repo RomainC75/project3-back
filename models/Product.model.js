@@ -2,6 +2,8 @@ const { Schema, model, SchemaTypes } = require('mongoose')
 
 const productSchema = new Schema({
     price: Number,
+    pictures:[{type:String}],
+    name: {type: String, required:true},
     stockQuantity: Number,
     brand: {type: String, required:true},
     options: String,

@@ -1,0 +1,16 @@
+[
+  {
+    "price": Number,
+    "name": String
+    "pictures": [],
+    "stockQuantity": Number,
+    "brand": { type: String, required: true },
+    "options": String,
+    "type": { type: String, enum: ["guitar", "bass"] },
+    "scale": Number,
+    "body": String,
+    "fretBoardWood": String,
+    "fretsNumber": Number,
+    "color": String,
+  }
+];
