@@ -5,23 +5,23 @@ const userSchema = new Schema(
   {
     email: {
       type: String,
-      // unique: true -> Ideally, should be unique, but its up to you
+      unique: true,
+      required: true,
     },
-    password: String,
-    firstName : String,
-    lastName : String,
-    address : {
-      addressNumber : Number,
-      street : String,
-      zipcode : Number,
-      city : String,
-      country : String
+    password: { type: Schematypes.String, required: true },
+    firstName: String,
+    lastName: String,
+    address: {
+      addressNumber: Number,
+      street: String,
+      zipcode: Number,
+      city: String,
+      country: String,
     },
-    isMailValidated : {
-      type : boolean,
-      default : true,
-    }
-    
+    isMailValidated: {
+      type: boolean,
+      default: false,
+    },
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`
