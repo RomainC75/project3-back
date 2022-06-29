@@ -7,4 +7,4 @@ const Accessory = Product.discriminator('AccessorySchema',
         color:String
     }))
 
-module.exports = Woodwind
+module.exports = Accessory
