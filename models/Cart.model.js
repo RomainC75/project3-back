@@ -7,8 +7,13 @@ const cartSchema = new Schema({
   },
   products: [
     {
-      id: { type: SchemaTypes.ObjectId, ref: "Products" }, // ! for the ref : "Products" we need to coordinate our models to be sure it's the same name for your Products model and the ref i put
+      id: { type: SchemaTypes.ObjectId, refPath: "targetedProduct" }, // ! for the ref : "Products" we need to coordinate our models to be sure it's the same name for your Products model and the ref i put
       quantity: Number,
+      targetedProduct: {
+        type: String,
+        required: true,
+        enum: ["String", "Guitar", "Accessory", "Woodwind"],
+      },
     },
   ],
   status: {
