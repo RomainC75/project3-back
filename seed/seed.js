@@ -9,6 +9,7 @@ const String = require('../models/String.model')
 const bassList = require('./dataBass.json')
 const guitarList = require('./dataGuitar.json')
 const stringList = require('./dataString.json')
+const woodList = require('./dataWoodwind.json')
 //console.log(bassList)
 
 const seed = async () =>{
