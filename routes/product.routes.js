@@ -1,7 +1,13 @@
 const router = require('express').Router()
+const Product = require('../models/Product.model')
 
-router.get('/',(req,res,next)=>{
-    res.status(200).json({message:"route product"})
+router.get('/',async(req,res,next)=>{
+    try{
+        const ans = await Product.find()
+        res.status(200).json({length : ans.length})
+    }catch(e){
+        res.status(400).json(e)
+    }
 })
 
 
