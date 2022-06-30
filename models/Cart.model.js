@@ -7,6 +7,7 @@ const cartSchema = new Schema({
   },
   products: [
     {
+      // --> pointer vers Product ?
       productId: { type: SchemaTypes.ObjectId, refPath: "targetedProduct" }, // ! for the ref : "Products" we need to coordinate our models to be sure it's the same name for your Products model and the ref i put
       quantity: Number,
       targetedProduct: {

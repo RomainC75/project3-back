@@ -1,18 +1,18 @@
 const { Schema, model, SchemaTypes } = require("mongoose");
 const Product = require("./Product.model");
 
-const guitarSchema = Product.discriminator(
+const Guitar = Product.discriminator(
   "GuitarSchema",
   new Schema({
-    type: { type: String, enum: ["guitar", "bass"] },
-    scale: Number,
+    type: { type: String, enum: ["Guitar", "Bass"] },
+    neck: String,
     body: String,
-    fretBoardWood: String,
+    fretBoard: String,
     fretsNumber: Number,
     color: String,
   })
 );
 
-const Guitar = new model("Guitar", guitarSchema);
+//const Guitar = new model("Guitar", guitarSchema);
 
 module.exports = Guitar;

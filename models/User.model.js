@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, SchemaTypes } = require("mongoose");
 
 // TODO: Please make sure you edit the user model to whatever makes sense in this case
 const userSchema = new Schema(
@@ -8,7 +8,7 @@ const userSchema = new Schema(
       unique: true,
       required: true,
     },
-    password: { type: Schematypes.String, required: true },
+    password: { type: SchemaTypes.String, required: true },
     firstName: String,
     lastName: String,
     address: {
@@ -19,7 +19,7 @@ const userSchema = new Schema(
       country: String,
     },
     isMailValidated: {
-      type: boolean,
+      type: Boolean,
       default: false,
     },
   },
