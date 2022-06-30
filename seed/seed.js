@@ -3,9 +3,9 @@ require('../db/index')
 const mongoose = require('mongoose')
 const Product = require('../models/Product.model')
 const Guitar = require('../models/Guitar.model')
-const guitarList = require('./dataBass.json')
-
-//console.log(guitarList)
+const bassList = require('./dataBass.json')
+const guitarList = require('./dataGuitar.json')
+//console.log(bassList)
 
 const seed = async () =>{
     try{
@@ -13,7 +13,8 @@ const seed = async () =>{
         await Product.deleteMany()
         await Guitar.deleteMany()
 
-        const ans = await Guitar.insertMany(guitarList)
+        const guitarAns = await Guitar.insertMany(guitarList)
+        const bassAns = await Guitar.insertMany(bassList)
         // await Promise.all(ans.map(async(house,i)=>{
         //     if(i<4){
         //         await User.findByIdAndUpdate(allUsers[0],{ $push:{ ownedHouses:house._id } })
@@ -23,7 +24,7 @@ const seed = async () =>{
         // }))
         
         const answer = await Product.find({__t:"GuitarSchema"})
-        console.log(answer)
+        //console.log(answer)
         
         mongoose.connection.close()
     }catch(e){

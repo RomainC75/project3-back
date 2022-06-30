@@ -1,5 +1,6 @@
 [
   {
+    "brand":"Fender",
     "Colour": "Yellow",
     "Fretboard": "Maple",
     "Neck": "Maple",
@@ -29,6 +30,7 @@
     ]
   },
   {
+    "brand":"Xotic",
     "Colour": "Blonde",
     "Fretboard": "Maple",
     "Neck": "Maple",
@@ -56,6 +58,7 @@
     ]
   },
   {
+    "brand":"Fender",
     "Colour": "Blonde",
     "Fretboard": "Maple",
     "Neck": "Maple",
@@ -85,6 +88,7 @@
     ]
   },
   {
+    "brand":"Fender",
     "Colour": "White",
     "Fretboard": "Rosewood",
     "Neck": "Maple",
@@ -101,6 +105,7 @@
     ]
   },
   {
+    "brand":"Fender",
     "Colour": "Sunburst",
     "Fretboard": "Rosewood",
     "Neck": "Maple",
@@ -113,6 +118,7 @@
     ]
   },
   {
+    "brand":"Suhr",
     "Colour": "Black",
     "Fretboard": "Maple",
     "Neck": "Maple",
@@ -140,6 +146,7 @@
     ]
   },
   {
+    "brand":"Xotic",
     "Colour": "Green",
     "Fretboard": "Maple",
     "Neck": "Maple",
@@ -168,6 +175,7 @@
     ]
   },
   {
+    "brand":"Harley",
     "Colour": "Natural",
     "Frets": 22,
     "price": 333,
@@ -191,6 +199,7 @@
     ]
   },
   {
+    "brand":"Squier",
     "Colour": "Sunburst",
     "Fretboard": "Indian Laurel",
     "Neck": "Maple",
@@ -216,6 +225,7 @@
     ]
   },
   {
+    "brand":"Fender",
     "Colour": "Natural",
     "Fretboard": "Indian Laurel",
     "Neck": "Mahogany",
@@ -239,6 +249,7 @@
     ]
   },
   {
+    "brand":"Squier",
     "Colour": "Natural",
     "Fretboard": "Maple",
     "Neck": "Maple",
@@ -265,6 +276,7 @@
     ]
   },
   {
+    "brand":"Harley",
     "Colour": "Black",
     "Fretboard": "Maple",
     "Neck": "Maple",
@@ -290,6 +302,7 @@
     ]
   },
   {
+    "brand":"Fender",
     "Colour": "Sunburst",
     "Fretboard": "Rosewood",
     "Neck": "Maple",
@@ -306,6 +319,7 @@
     ]
   },
   {
+    "brand":"Cort",
     "Colour": "Black",
     "Neck": "Maple",
     "Fretboard": "Laurel",
@@ -315,6 +329,7 @@
     "pictures": []
   },
   {
+    "brand":"Epiphone",
     "Colour": "Sunburst",
     "Neck": "Mahogany",
     "Fretboard": "Laurel",
@@ -341,6 +356,7 @@
     ]
   },
   {
+    "brand":"Schecter",
     "Colour": "Atomic Frost",
     "Neck": "Maple",
     "Fretboard": "Ebony",
