@@ -207,5 +207,31 @@
     "fretBoard": "Maple",
     "fretsNumber": 20,
     "color": "White"
+  },
+  {
+    "neck": "Maple",
+    "fretboard": "Laurel",
+    "brand":"Squier",
+    "frets": 20,
+    "price": 444,
+    "name": "Squier 40th P Bass LPB",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220548_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220574_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220573_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220539_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220538_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220533_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220528_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220553_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220558_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220563_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220568_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220593_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220598_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220603_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220588_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220583_800.jpg"
+    ]
   }
 ]
