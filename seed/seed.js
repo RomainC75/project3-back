@@ -10,6 +10,7 @@ const bassList = require('./dataBass.json')
 const guitarList = require('./dataGuitar.json')
 const stringList = require('./dataString.json')
 const woodList = require('./dataWoodwind.json')
+
 //console.log(bassList)
 
 const seed = async () =>{
@@ -18,10 +19,12 @@ const seed = async () =>{
         await Product.deleteMany()
         await Guitar.deleteMany()
         await Woodwind.deleteMany()
-
-        // const guitarAns = await Guitar.insertMany(guitarList)
-        // const bassAns = await Guitar.insertMany(bassList)
+        await String.deleteMany()
+        
+        const guitarAns = await Guitar.insertMany(guitarList)
+        const bassAns = await Guitar.insertMany(bassList)
         const stringAns = await String.insertMany(stringList)
+        const woodAns = await Woodwind.insertMany(woodList)
         // await Promise.all(ans.map(async(house,i)=>{
         //     if(i<4){
         //         await User.findByIdAndUpdate(allUsers[0],{ $push:{ ownedHouses:house._id } })
