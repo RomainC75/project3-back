@@ -27,7 +27,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/501346/16186391_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/501346/16186386_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/501346/16186451_800.jpg"
-    ]
+    ],
+    "stockQuantity":10
   },
   {
     "brand":"Xotic",
@@ -55,7 +56,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/527368/17342873_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/527368/17342848_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/527368/17342818_800.jpg"
-    ]
+    ],
+    "stockQuantity":10
   },
   {
     "brand":"Fender",
@@ -85,7 +87,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/532637/17203360_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/532637/17203333_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/532637/17203328_800.jpg"
-    ]
+    ],
+    "stockQuantity":20
   },
   {
     "brand":"Fender",
@@ -102,7 +105,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/538666/17068888_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/538666/17036904_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/538666/17036903_800.jpg"
-    ]
+    ],
+    "stockQuantity":9
   },
   {
     "brand":"Fender",
@@ -115,7 +119,8 @@
     "pictures": [
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/538993/17054938_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/538993/17054933_800.jpg"
-    ]
+    ],
+    "stockQuantity":18
   },
   {
     "brand":"Suhr",
@@ -143,7 +148,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/509777/17372182_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/509777/17372196_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/509777/17372146_800.jpg"
-    ]
+    ],
+    "stockQuantity":13
   },
   {
     "brand":"Xotic",
@@ -172,7 +178,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/527385/17399735_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/527385/17399691_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/527385/17399660_800.jpg"
-    ]
+    ],
+    "stockQuantity":10
   },
   {
     "brand":"Harley",
@@ -196,7 +203,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/469461/16561391_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/469461/16561406_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/469461/16561396_800.jpg"
-    ]
+    ],
+    "stockQuantity":7
   },
   {
     "brand":"Squier",
@@ -222,7 +230,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/468475/15241698_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/468475/15241703_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/468475/15241708_800.jpg"
-    ]
+    ],
+    "stockQuantity":11
   },
   {
     "brand":"Fender",
@@ -246,7 +255,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/439362/13651391_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/439362/13651396_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/439362/13651401_800.jpg"
-    ]
+    ],
+    "stockQuantity":13
   },
   {
     "brand":"Squier",
@@ -273,7 +283,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/468477/15240408_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/468477/15240438_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/468477/15240403_800.jpg"
-    ]
+    ],
+    "stockQuantity":21
   },
   {
     "brand":"Harley",
@@ -299,7 +310,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/503289/15665675_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/503289/15665665_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/503289/15665670_800.jpg"
-    ]
+    ],
+    "stockQuantity":24
   },
   {
     "brand":"Fender",
@@ -316,7 +328,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/452969/13670961_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/452969/13670976_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/452969/13670971_800.jpg"
-    ]
+    ],
+    "stockQuantity":19
   },
   {
     "brand":"Cort",
@@ -326,7 +339,8 @@
     "Frets": 22,
     "price": 839,
     "name": "Cort MBM-2H Manson Meta SUS SB",
-    "pictures": []
+    "pictures": [],
+    "stockQuantity":2
   },
   {
     "brand":"Epiphone",
@@ -353,7 +367,8 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/518605/16362323_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/518605/16362398_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/518605/16362373_800.jpg"
-    ]
+    ],
+    "stockQuantity":10
   },
   {
     "brand":"Schecter",
@@ -377,6 +392,7 @@
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/488289/16202961_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/488289/16202976_800.jpg",
       "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/488289/16202911_800.jpg"
-    ]
+    ],
+    "stockQuantity":18
   }
 ]

@@ -1,23 +1,5 @@
 [
   {
-    "brand": "Keilwerth",
-    "Colour": "Nickel Plated",
-    "price": 4111,
-    "name": "Keilwerth SX90R Alto Sax Gold Lacquer",
-    "pictures": [
-      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/280528/5555315_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/280528/5555340_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/280528/5555335_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/280528/12654001_800.jpg"
-    ],
-    "type": "alto",
-    "body": "brass",
-    "resonatorPad": "metal",
-    "caseWithBackpackSystem": true,
-    "stockQuantity": 2,
-    "wiper": true
-  },
-  {
     "brand": "Selmer",
     "Colour": "Gold Lacquered",
     "price": 3799,
@@ -263,3 +245,4 @@
     "stockQuantity": 3
   }
 ]
+

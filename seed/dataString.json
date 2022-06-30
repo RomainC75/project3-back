@@ -1,0 +1,324 @@
+[
+  {
+    "brand": "Scala",
+    "Colour": "natural",
+    "price": 7699,
+    "name": "Scala Vilagio PSH07/E Solo Violin Guarneri",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478778/14695596_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478778/14695601_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478778/14695606_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478778/14695621_800.jpg"
+    ],
+    "type": "violin",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": false,
+    "bowIncluded": true,
+    "strings": "Pirastro Evah Pirazzi Gold",
+    "caseIncluded": true,
+    "size": "4/4",
+    "stockQuantity":2
+  },
+  {
+    "brand": "Scala",
+    "Colour": "natural",
+    "price": 5299,
+    "name": "Scala Vilagio PSH06/B Concert Violin Guarn.",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478770/14911575_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478770/14911580_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478770/14911600_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478770/14911610_800.jpg"
+    ],
+    "type": "violin",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": false,
+    "bowIncluded": true,
+    "strings": "Pirastro Evah Pirazzi Gold",
+    "caseIncluded": false,
+    "size": "4/4",
+    "stockQuantity":5
+  },
+  {
+    "brand": "Ernst",
+    "Colour": "natural",
+    "price": 4399,
+    "name": "Ernst Heinrich Roth 62/VII-R Master Violin 4/4",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478770/14911575_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478770/14911580_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478770/14911600_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/478770/14911610_800.jpg"
+    ],
+    "type": "violin",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": false,
+    "bowIncluded": false,
+    "strings": "Pirastro Tonica",
+    "caseIncluded": false,
+    "size": "4/4",
+    "stockQuantity":3
+  },
+  {
+    "brand": "Stentor",
+    "Colour": "natural",
+    "price": 309,
+    "name": "Stentor SR1550 Conservatoire 4/4",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/137897/14910710_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/137897/14910750_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/137897/14910735_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/137897/14919880_800.jpg"
+    ],
+    "type": "violin",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": false,
+    "strings": "Pirastro Tonica",
+    "caseIncluded": true,
+    "size": "4/4",
+    "stockQuantity":10
+  },
+  {
+    "brand": "Scala",
+    "Colour": "natural",
+    "price": 5499,
+    "name": "Scala Vilagio F.H. G. Grancino Viola 1670",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/531764/17242013_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/531764/17242043_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/531764/17242023_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/531764/17242008_800.jpg"
+    ],
+    "type": "viola",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": false,
+    "strings": "Thomastik Dominant",
+    "caseIncluded": true,
+    "size": "16,5",
+    "stockQuantity":3
+  },
+  {
+    "brand": "Klaus Heffler",
+    "Colour": "natural",
+    "price": 2299,
+    "name": "Klaus Heffler No. 7/3 SE Concert Viola 16",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780581_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780586_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780606_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780601_800.jpg"
+    ],
+    "type": "viola",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": false,
+    "bowIncluded": true,
+    "strings": "Pirastro Obligato",
+    "caseIncluded": true,
+    "size": "16",
+    "stockQuantity":0
+  },
+  {
+    "brand": "Franz Sandner",
+    "Colour": "natural",
+    "price": 1055,
+    "name": "Franz Sandner 902 Viola 16,5\"",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780581_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780586_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780606_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780601_800.jpg"
+    ],
+    "type": "viola",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": false,
+    "bowIncluded": true,
+    "strings": "Pirastro Tonica",
+    "caseIncluded": true,
+    "size": "16,5",
+    "stockQuantity":8
+  },
+  {
+    "brand": "Klaus Heffler",
+    "Colour": "natural",
+    "price": 1055,
+    "name": "Klaus Heffler No. 7/3 SE Concert Viola 16\"",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780581_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780586_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780606_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/439617/13780601_800.jpg"
+    ],
+    "type": "viola",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": false,
+    "bowIncluded": true,
+    "strings": "Pirastro Obligato",
+    "caseIncluded": true,
+    "size": "16",
+    "stockQuantity":4
+  },
+
+  {
+    "brand": "Yamaha",
+    "Colour": "natural",
+    "price": 1055,
+    "name": "Yamaha VC 5S44 Cello 4/4",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/111061/9707550_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/111061/9707560_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/111061/9707545_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/111061/9707575_800.jpg"
+    ],
+    "type": "cello",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": true,
+    "strings": "Pirastro Obligato",
+    "caseIncluded": false,
+    "size": "4/4",
+    "stockQuantity":9
+  },
+  {
+    "brand": "Gewa",
+    "Colour": "natural",
+    "price": 2299,
+    "name": "Gewa Germania Berlin Ant. Cello 7/8",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/524477/17133558_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/524477/17133569_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/524477/17133608_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/524477/17133578_800.jpg"
+    ],
+    "type": "cello",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": true,
+    "strings": "Jargar Classic Medium",
+    "caseIncluded": true,
+    "size": "7/8",
+    "stockQuantity":12
+  },
+  {
+    "brand": "Thomann",
+    "Colour": "black",
+    "price": 351,
+    "name": "Thomann Gothic Black Cello 4/4",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132896_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132886_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132936_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132911_800.jpg"
+    ],
+    "type": "cello",
+    "Fretboard": "hard wood",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": true,
+    "strings": "Jargar Classic Medium",
+    "caseIncluded": false,
+    "size": "4/4",
+    "stockQuantity":4
+  },
+  {
+    "brand": "Thomann",
+    "Colour": "natural",
+    "price": 351,
+    "name": "Thomann Gothic Black Cello 4/4",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132896_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132886_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132936_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132911_800.jpg"
+    ],
+    "type": "cello",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": false,
+    "strings": "Jargar Superior",
+    "caseIncluded": true,
+    "size": "4/4",
+    "stockQuantity":9
+  },
+
+  {
+    "brand": "Thomann",
+    "Colour": "natural",
+    "price": 1369,
+    "name": "Thomann 33AS 3/4 Europe Double Bass",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132896_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132886_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132936_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/224770/13132911_800.jpg"
+    ],
+    "type": "doubleBass",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": true,
+    "strings": "Thomastik Spirocore Double Bass 3/4 L",
+    "caseIncluded": true,
+    "size": "3/4",
+    "stockQuantity":7
+  },
+  {
+    "brand": "Meister",
+    "Colour": "natural",
+    "price": 7099,
+    "name": "Meister Rubner Double Bass No.66 3/4",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/328743/16324063_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/328743/16324083_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/328743/16324088_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/328743/16324118_800.jpg"
+    ],
+    "type": "cello",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": true,
+    "strings": "Thomastik Spirocore Double Bass 3/4 L",
+    "caseIncluded": true,
+    "size": "3/4",
+    "stockQuantity":7
+  },
+  {
+    "brand": "Meister",
+    "Colour": "natural",
+    "price": 7099,
+    "name": "Scala Vilagio Double Bass Gofriller IB",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/452290/14097002_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/452290/14097012_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/452290/14097007_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/452290/14097057_800.jpg"
+    ],
+    "type": "cello",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": true,
+    "bowIncluded": true,
+    "strings": "Daddario HH610-3/4M Helicore Bass 3/4",
+    "caseIncluded": false,
+    "size": "3/4",
+    "stockQuantity":7
+  },
+  {
+    "brand": "Meister",
+    "Colour": "natural",
+    "price": 3903,
+    "name": "Gewa Germania Bass Berlin Antik 3/4",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/362354/9918376_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/362354/9918371_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/362354/9918396_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/362354/9918391_800.jpg"
+    ],
+    "type": "cello",
+    "Fretboard": "Ebony",
+    "NoTropicalWoodUsed": false,
+    "bowIncluded": false,
+    "strings": "Daddario HH610-3/4M Helicore Bass 3/4",
+    "caseIncluded": false,
+    "size": "3/4",
+    "stockQuantity":3
+  }
+]
