@@ -3,7 +3,7 @@ const Product = require('./Product.model')
 
 const Woodwind = Product.discriminator('WoodwindSchema',
     new Schema({
-        type:{type: String ,enum:['saxophon', 'clarinet', 'bassoon', 'oboe']},
+        type:{type: String ,enum:['soprano', 'alto', 'tenor', 'baritone']},
         //Bb,Eb
         tonality:String,
         highFSharpKey:Boolean,
