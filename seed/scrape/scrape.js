@@ -72,6 +72,7 @@ const scrape = (url) => {
         return objToSend;
       });
       console.log("got data ! : ", data);
+      //browser.close()
       resolve(data);
     } catch (e) {
       reject(e);
@@ -79,7 +80,7 @@ const scrape = (url) => {
   });
 };
 
-scrape("https://www.thomannmusic.com/fender_sq_40th_p_bass_lpb.htm").then(
+scrape("https://www.thomannmusic.com/fender_51_telecaster_alpb_relic.htm").then(
   (result) => {
     dataJSON.push(result);
     fs.writeFile(
