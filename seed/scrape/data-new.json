@@ -1,29 +1,236 @@
 [
   {
-    "Colour": "Blonde",
-    "Fretboard": "Maple",
-    "Neck": "Maple",
-    "Frets": 22,
-    "price": 3179,
-    "name": "Xotic Guitars XTC-1 Ash MN BB Heavy Aged",
+    "price": 6499,
     "pictures": [
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342823_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342843_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342833_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342828_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342838_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342813_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342808_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342858_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342859_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342853_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342868_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342883_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342888_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342878_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342873_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342848_800.jpg",
-      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/527368/17342818_800.jpg"
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/355962/16497801_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/355962/16497781_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/355962/16497786_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/355962/16497791_800.jpg"
+    ],
+    "name": "Emperor Standard Classic RW WH",
+    "stockQuantity": 5,
+    "brand": "Fodera",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Rosewood",
+    "fretBoard": "Ebony",
+    "fretsNumber": 24,
+    "color": "White"
+  },
+  {
+    "price": 5999,
+    "pictures": [
+      "https://images.static-thomann.de/pics/bdb/464489/17072333_800.jpg"
+    ],
+    "name": "Le Fay Singer 6 Maple",
+    "stockQuantity": 2,
+    "brand": "Le fay",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Walnut",
+    "fretBoard": "Ebony",
+    "fretsNumber": 24,
+    "color": "Natural"
+  },
+  {
+    "price": 7333,
+    "pictures": [
+      "https://images.static-thomann.de/pics/bdb/543429/17272704_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/543429/17272705_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/543429/17272703_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/543429/17272709_800.jpg"
+    ],
+    "name": "Le Fay Remington Steele 6 Blue FL",
+    "stockQuantity": 3,
+    "brand": "Le fay",
+    "type": "Bass",
+    "neck": "Paduk",
+    "body": "Cherry",
+    "fretBoard": "Ebony",
+    "fretsNumber": 24,
+    "color": "Natural"
+  },
+  {
+    "price": 7333,
+    "pictures": [
+      "https://images.static-thomann.de/pics/bdb/546434/17378836_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/546434/17378846_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/546434/17378841_800.jpg"
+    ],
+    "name": "Warwick Masterbuilt Thumb Bass SC NT 5",
+    "stockQuantity": 1,
+    "brand": "Warwick",
+    "type": "Bass",
+    "neck": "Ekanga",
+    "body": "Bubinga",
+    "fretBoard": "Ebony",
+    "fretsNumber": 26,
+    "color": "Natural"
+  },
+  {
+    "price": 9333,
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054965_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054954_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054953_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054966_800.jpg"
+    ],
+    "name": "Fender 62 Jazz Bass FRo3CS Relic MBVT",
+    "stockQuantity": 1,
+    "brand": "Fender",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Alder",
+    "fretBoard": "Rosewood",
+    "fretsNumber": 20,
+    "color": "Red"
+  },
+  {
+    "price": 8199,
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054965_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054954_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054953_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054966_800.jpg"
+    ],
+    "name": "Fender 59 P-Bass C3CS Relic MBVT",
+    "stockQuantity": 1,
+    "brand": "Fender",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Ash",
+    "fretBoard": "Maple",
+    "fretsNumber": 20,
+    "color": "Sunburst"
+  },
+  {
+    "price": 6499,
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054965_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054954_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054953_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/539014/17054966_800.jpg"
+    ],
+    "name": "Fodera Emperor Standard 5",
+    "stockQuantity": 4,
+    "brand": "Fodera",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Alder",
+    "fretBoard": "Pau Ferro",
+    "fretsNumber": 24,
+    "color": "Natural"
+  },
+  {
+    "price": 7399,
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/380369/17179743_800.jpg"
+    ],
+    "name": "Marleaux Contra 5 fretless",
+    "stockQuantity": 1,
+    "brand": "Marleaux",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Maple",
+    "fretBoard": "Ebony",
+    "fretsNumber": 24,
+    "color": "Brown"
+  },
+  {
+    "price": 877,
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/536863/16963875_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/536863/16963890_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/536863/16963870_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/536863/16963885_800.jpg"
+    ],
+    "name": "Charvel Pro-Mod SD Bass IV PJ MB",
+    "stockQuantity": 1,
+    "brand": "Charvel",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Alder",
+    "fretBoard": "Maple",
+    "fretsNumber": 20,
+    "color": "Black"
+  },
+  {
+    "price": 877,
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/536009/16937030_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/536009/16937025_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/536009/16937050_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/536009/16937036_800.jpg"
+    ],
+    "name": "Squier Cont P-Bass Sunset Met",
+    "stockQuantity": 8,
+    "brand": "Fender",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Poplar",
+    "fretBoard": "Laurel",
+    "fretsNumber": 20,
+    "color": "Sunburst"
+  },
+  {
+    "price": 1899,
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/441173/13718146_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/441173/13718136_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/441173/13718246_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/441173/13718156_800.jpg"
+    ],
+    "name": "Sandberg California II VM 4 O. Riedel",
+    "stockQuantity": 8,
+    "brand": "Sandberg",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Alder",
+    "fretBoard": "Ebony",
+    "fretsNumber": 20,
+    "color": "Black"
+  },
+  {
+    "price": 414,
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/441173/13718146_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/441173/13718136_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/441173/13718246_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/441173/13718156_800.jpg"
+    ],
+    "name": "Marcus Miller D5 Alder-4 VWH",
+    "stockQuantity": 10,
+    "brand": "Sire",
+    "type": "Bass",
+    "neck": "Maple",
+    "body": "Alder",
+    "fretBoard": "Maple",
+    "fretsNumber": 20,
+    "color": "White"
+  },
+  {
+    "Neck": "Maple",
+    "Fretboard": "Laurel",
+    "Frets": 20,
+    "price": 444,
+    "name": "Squier 40th P Bass LPB",
+    "pictures": [
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220548_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220574_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220573_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220539_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220538_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220533_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220528_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220553_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220558_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220563_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220568_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220593_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220598_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220603_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220588_800.jpg",
+      "https://thumbs.static-thomann.de/thumb/thumb80x80/pics/bdb/535979/17220583_800.jpg"
     ]
   }
 ]
