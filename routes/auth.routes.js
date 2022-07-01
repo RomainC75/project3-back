@@ -53,7 +53,7 @@ router.post('/signin', possibleCredentials, async (req,res,next)=>{
                 token: jwt.sign(
                     {userId: recordedUser._id},
                     process.env.TOKEN_SECRET,
-                    {expiresIn:'10m'}
+                    {expiresIn:'10h'}
                 )
             })
         }else{
