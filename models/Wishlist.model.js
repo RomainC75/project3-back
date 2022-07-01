@@ -4,6 +4,7 @@ const wishlistSchema = new Schema({
   userId: {
     type: SchemaTypes.ObjectId,
     ref: "User",
+    unique:true
   },
   products: [
     {
