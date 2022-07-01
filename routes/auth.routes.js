@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const possibleCredentials = require('../middleware/possibleCredentials.mid')
 const authentication = require('../middleware/authentication.mid')
+const Wishlist = require('../models/Wishlist.model')
 require('dotenv').config()
 
 
@@ -31,6 +32,11 @@ router.post('/signup',possibleCredentials, async (req,res,next)=>{
         const ans = await User.create({
             email,
             password:hash
+        })
+        console.log('user ID : ',ans)
+        const wishListAns = await Wishlist.create({
+            userId:ans._id,
+            products:[]
         })
         res.status(201).json(ans)
     }catch(e){
