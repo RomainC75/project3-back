@@ -7,7 +7,7 @@ const { json } = require("express");
 router.get("/", authentication, async (req, res, next) => {
   try {
     console.log(req.user._id);
-    const userCart = await Cart.find({ userId: req.user._id });
+    const userCart = await Cart.find({ userId: req.user._id }).populate('products.productId');
     return res.json(userCart);
   } catch (error) {
     next(error);
