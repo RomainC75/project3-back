@@ -3,65 +3,51 @@ const router = require("express").Router();
 const authentication = require("../middleware/authentication.mid");
 const User = require("../models/User.model");
 
-// router.get("/", authentication, async (req, res, next) => {
-//   console.log(req.headers.authentication);
-//   try {
-//     const list = await User.find();
-//     res.status(200).json(list);
-//   } catch (e) {
-//     next(e);
-//   }
-// });
-
-router.get("/:id", authentication, async (req, res, next) => {
-  console.log(req.headers.authentication);
+//get the authenticated user 's informations
+router.get("/", authentication, async (req, res, next) => {
   try {
-    if (
-      req.user.accessLevel === "admin" ||
-      req.params.id === req.user._id.toString()
-    ) {
-      const ans = await User.findById(req.params.id);
-      res.status(400).json(ans);
-    } else {
-      res.status(400).json({ message: "unauthorized !" });
-    }
+    const userFound = await User.findOne({ _id: req.user._id });
+    res.status(200).json(userFound);
   } catch (e) {
     next(e);
   }
 });
 
-router.put("/:id", authentication, async (req, res, next) => {
+router.put("/", authentication, async (req, res, next) => {
+  const availableKeys = [
+    "email",
+    "password",
+    "firstName",
+    "lastName",
+    "address",
+    "isMailValidated",
+  ];
   console.log(req.body);
+  const wrongFields = Object.keys(req.body).filter(
+    (key) => !availableKeys.includes(key)
+  );
+  if (wrongFields.length > 0) {
+    res.status(400).json({
+      message: "wrong field(s) !",
+      wrongfields: wrongFields,
+    });
+    return;
+  }
   try {
-    if (
-      req.user.accessLevel === "admin" ||
-      req.params.id === req.user._id.toString()
-    ) {
-      const ans = await User.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-      });
-      res.status(200).json(ans);
-    } else {
-      res.status(400).json({ message: "unauthorized !" });
-    }
+    const ans = await User.findByIdAndUpdate(req.user._id, req.body, {
+      new: true,
+    });
+    res.status(200).json(ans);
   } catch (e) {
     next(e);
   }
 });
 
-router.delete("/:id", authentication, async (req, res, next) => {
+router.delete("/", authentication, async (req, res, next) => {
   console.log(req.body);
   try {
-    if (
-      req.user.accessLevel === "admin" ||
-      req.params.id === req.user._id.toString()
-    ) {
-      const foundUser = await User.findById(req.params.id);
-      const ans = await User.findByIdAndDelete(req.params.id);
-      res.status(200).json({ message: "deleted with the houses !" });
-    } else {
-      res.status(400).json({ message: "unauthorized !" });
-    }
+    await User.findByIdAndDelete(req.user._id);
+    res.status(200).json({ message: "deleted" });
   } catch (e) {
     next(e);
   }
