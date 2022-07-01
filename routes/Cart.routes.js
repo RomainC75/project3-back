@@ -15,7 +15,7 @@ router.get("/", authentication, async (req, res, next) => {
 //
 router.post("/", authentication, async (req, res, next) => {
   try {
-    const userCart = await Cart.find({userId : req.user._id});
+    const userCart = await Cart.find({userId : req.user._id, status : "Pending"});
     if (userCart.length !== 0) {
         res.status(405).json({reason : 'User already have a cart'});
     } else {
