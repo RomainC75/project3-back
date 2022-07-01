@@ -6,7 +6,7 @@ router.get("/", authentication, async (req, res, next) => {
   try {
     console.log(req.user._id);
     const userCart = await Cart.find({userId : req.user._id});
-    res.json(userCart);
+    return res.json(userCart);
   } catch (error) {
     next(error);
   }
@@ -17,7 +17,7 @@ router.post("/", authentication, async (req, res, next) => {
   try {
     const userCart = await Cart.find({userId : req.user._id, status : "Pending"});
     if (userCart.length !== 0) {
-        res.status(405).json({reason : 'User already have a cart'});
+        return res.status(405).json({reason : 'User already have a cart'});
     } else {
         const createdCart = await Cart.create({
             userId: req.user._id,
@@ -41,7 +41,7 @@ router.patch("/", authentication, async (req, res, next) => {
     }})
     
       const newCart = await Cart.findOneAndUpdate({ userId: req.user._id }, {products: newContent});
-       res.status(200).json({
+       return res.status(200).json({
            message : "Successfully updated",
            result : newCart
        })
