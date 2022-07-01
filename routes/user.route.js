@@ -2,6 +2,8 @@ const router = require("express").Router();
 
 const authentication = require("../middleware/authentication.mid");
 const User = require("../models/User.model");
+const Wishlist = require("../models/Wishlist.model");
+const Cart = require("../models/Cart.model");
 
 //get the authenticated user 's informations
 router.get("/", authentication, async (req, res, next) => {
@@ -43,11 +45,27 @@ router.put("/", authentication, async (req, res, next) => {
   }
 });
 
+//delete wishlist and cartS at the same time
 router.delete("/", authentication, async (req, res, next) => {
   console.log(req.body);
   try {
+    //delete all Carts
+    const foundCarts = await Cart.find({ userId: req.user._id });
+    if (foundCarts.length > 0) {
+      await Promise.all(
+        foundCarts.map(async (cart) => {
+          await Cart.findByIdAndDelete(cart._id);
+        })
+      );
+    }
+    //delete the wishList
+    const deletedWishList = await Wishlist.findOneAndDelete({
+      userId: req.user._id,
+    });
+
+    //delete the user
     await User.findByIdAndDelete(req.user._id);
-    res.status(200).json({ message: "deleted" });
+    res.status(200).json({ message: "user, wishList and carts are deleted" });
   } catch (e) {
     next(e);
   }

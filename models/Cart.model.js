@@ -12,7 +12,7 @@ const cartSchema = new Schema({
         type: SchemaTypes.ObjectId, 
         ref: "Product"
      }, // ! for the ref : "Products" we need to coordinate our models to be sure it's the same name for your Products model and the ref i put
-      quantity: Number
+      quantity:{type: Number, required:true}
     },
   ],
   status: {
@@ -20,6 +20,8 @@ const cartSchema = new Schema({
     enum: ["Pending", "Payed", "Shipped", "Received"],
     default: "Pending"
   },
+},{
+  timestamps:true
 });
 
 const Cart = model("Cart", cartSchema);

@@ -12,7 +12,8 @@ const wishlistSchema = new Schema({
       product: { type: SchemaTypes.ObjectId, ref: Product }
     },
   ],
-});
+},
+{timestamp:true});
 
 const Wishlist = model("Wishlist", wishlistSchema);
 
