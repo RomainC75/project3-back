@@ -28,7 +28,10 @@ const getLocalPart = () =>{
 
 const getRandomizedUser = ()=>{
     const domains = ['gmail.com','yahoo.com','outlook.com','aol.com','hubspot.com']
-    const email = getLocalPart() + '@' + domains[ Math.floor(Math.random()*domains.length) ]
+    return {
+        email : getLocalPart() + '@' + domains[ Math.floor(Math.random()*domains.length) ],
+        password : getLocalPart()
+    }
 }
 
 const test = () =>{
