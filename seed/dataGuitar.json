@@ -1,5 +1,6 @@
 [
   {
+    "type":"Guitar",
     "brand":"Fender",
     "Colour": "Yellow",
     "Fretboard": "Maple",
@@ -31,6 +32,7 @@
     "stockQuantity":10
   },
   {
+    "type":"Guitar",
     "brand":"Xotic",
     "Colour": "Blonde",
     "Fretboard": "Maple",
@@ -60,6 +62,7 @@
     "stockQuantity":10
   },
   {
+    "type":"Guitar",
     "brand":"Fender",
     "Colour": "Blonde",
     "Fretboard": "Maple",
@@ -91,6 +94,7 @@
     "stockQuantity":20
   },
   {
+    "type":"Guitar",
     "brand":"Fender",
     "Colour": "White",
     "Fretboard": "Rosewood",
@@ -109,6 +113,7 @@
     "stockQuantity":9
   },
   {
+    "type":"Guitar",
     "brand":"Fender",
     "Colour": "Sunburst",
     "Fretboard": "Rosewood",
@@ -123,6 +128,7 @@
     "stockQuantity":18
   },
   {
+    "type":"Guitar",
     "brand":"Suhr",
     "Colour": "Black",
     "Fretboard": "Maple",
@@ -152,6 +158,7 @@
     "stockQuantity":13
   },
   {
+    "type":"Guitar",
     "brand":"Xotic",
     "Colour": "Green",
     "Fretboard": "Maple",
@@ -182,6 +189,7 @@
     "stockQuantity":10
   },
   {
+    "type":"Guitar",
     "brand":"Harley",
     "Colour": "Natural",
     "Frets": 22,
@@ -207,6 +215,7 @@
     "stockQuantity":7
   },
   {
+    "type":"Guitar",
     "brand":"Squier",
     "Colour": "Sunburst",
     "Fretboard": "Indian Laurel",
@@ -234,6 +243,7 @@
     "stockQuantity":11
   },
   {
+    "type":"Guitar",
     "brand":"Fender",
     "Colour": "Natural",
     "Fretboard": "Indian Laurel",
@@ -259,6 +269,7 @@
     "stockQuantity":13
   },
   {
+    "type":"Guitar",
     "brand":"Squier",
     "Colour": "Natural",
     "Fretboard": "Maple",
@@ -287,6 +298,7 @@
     "stockQuantity":21
   },
   {
+    "type":"Guitar",
     "brand":"Harley",
     "Colour": "Black",
     "Fretboard": "Maple",
@@ -314,6 +326,7 @@
     "stockQuantity":24
   },
   {
+    "type":"Guitar",
     "brand":"Fender",
     "Colour": "Sunburst",
     "Fretboard": "Rosewood",
@@ -332,6 +345,7 @@
     "stockQuantity":19
   },
   {
+    "type":"Guitar",
     "brand":"Cort",
     "Colour": "Black",
     "Neck": "Maple",
@@ -343,6 +357,7 @@
     "stockQuantity":2
   },
   {
+    "type":"Guitar",
     "brand":"Epiphone",
     "Colour": "Sunburst",
     "Neck": "Mahogany",
@@ -371,6 +386,7 @@
     "stockQuantity":10
   },
   {
+    "type":"Guitar",
     "brand":"Schecter",
     "Colour": "Atomic Frost",
     "Neck": "Maple",
