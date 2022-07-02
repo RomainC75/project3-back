@@ -1,7 +1,7 @@
 //<64 characters
 //no _ in the domain part
 
-
+const fs = require('fs')
 
 const halfAChance = () =>{
     return Math.random()<0.5 ? false : true
@@ -34,10 +34,25 @@ const getRandomizedUser = ()=>{
     }
 }
 
+const createUsersJsonFile = () => {
+    const users = []
+    for(let i =0 ; i<15; i++){
+        users.push(getRandomizedUser())
+    }
+    
+    fs.writeFile("../dataUser.json",JSON.stringify(users), (err) => {
+        if (err)
+          console.log(err);
+        else {
+          console.log("File written successfully :-) !\n");
+        }
+      });
+}
+
 const test = () =>{
     for(let i =0; i<1000 ; i++ ){
         getRandomizedUser()
     }
 }
 
-test()
+createUsersJsonFile()
