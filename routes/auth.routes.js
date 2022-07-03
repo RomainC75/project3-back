@@ -42,9 +42,11 @@ router.post('/signup',possibleCredentials, async (req,res,next)=>{
         }
         const salt = await bcrypt.genSalt(10)
         const hash = await bcrypt.hash(password,salt)
+        const emailValidationCode = Math.random()*1000
         const ans = await User.create({
             email,
-            password:hash
+            password:hash,
+            emailValidationCode
         })
         console.log('user ID : ',ans)
         const wishListAns = await Wishlist.create({
@@ -56,7 +58,7 @@ router.post('/signup',possibleCredentials, async (req,res,next)=>{
 
         const emailToken= jwt.sign(
             {email: email,
-            secretNumber:Math.random()*1000},
+            emailValidationCode},
             process.env.TOKEN_SECRET,
             {expiresIn:'3d'}
         )
@@ -66,7 +68,7 @@ router.post('/signup',possibleCredentials, async (req,res,next)=>{
             to: email, 
             subject: 'email verification', 
             text: 'email verification',
-            html: `<b>Awesome Message</b> <a href="http://localhost:5005/confirmation/${emailToken}">Click on the link below :</a>`
+            html: `<b>Awesome Message</b> <a href="${process.env.BACKENDADDRESS}/emailconfirmation/${emailToken}">Click on the link below :</a>`
           })
           .then(info => console.log('-->email sent :-) !!',info))
           .catch(error => console.log('-->nodemailer error : ',error))
@@ -83,6 +85,11 @@ router.post('/signin', possibleCredentials, async (req,res,next)=>{
         const recordedUser = await User.findOne({email})
         if(recordedUser===null){
             res.status(404).json({message: "user not found !"})
+            return
+        }
+        if(!recordedUser.isMailValidated){
+            res.status(404).json({message:"email not validated"})
+            return
         }
         const isPasswordValid = await bcrypt.compare(password,recordedUser.password)
         if(isPasswordValid){
