@@ -1,11 +1,24 @@
 const router = require('express').Router()
+const nodemailer = require('nodemailer')
 const User = require('../models/User.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const possibleCredentials = require('../middleware/possibleCredentials.mid')
 const authentication = require('../middleware/authentication.mid')
 const Wishlist = require('../models/Wishlist.model')
+
 require('dotenv').config()
+console.log('inside : ',process.env.EMAILEE, process.env.EMAILEE_PASS)
+
+let transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: process.env.EMAILGMAIL,
+      pass: process.env.EMAILGMAIL_PASS
+    }
+  });
+
+  
 
 
 router.get('/verify', authentication, async (req,res,next)=>{
@@ -38,7 +51,26 @@ router.post('/signup',possibleCredentials, async (req,res,next)=>{
             userId:ans._id,
             products:[]
         })
+
         res.status(201).json(ans)
+
+        const emailToken= jwt.sign(
+            {email: email,
+            secretNumber:Math.random()*1000},
+            process.env.TOKEN_SECRET,
+            {expiresIn:'3d'}
+        )
+        //email 
+        transporter.sendMail({
+            from: process.env.EMAILGMAIL,
+            to: email, 
+            subject: 'email verification', 
+            text: 'email verification',
+            html: `<b>Awesome Message</b> <a href="http://localhost:5005/confirmation/${emailToken}">Click on the link below :</a>`
+          })
+          .then(info => console.log('-->email sent :-) !!',info))
+          .catch(error => console.log('-->nodemailer error : ',error))
+
     }catch(e){
         next(e)
     }
