@@ -11,14 +11,15 @@ router.use( async (req,res,next)=>{
         const user = await User.findById(data.userId)
         if(user===null){
             res.status(400).json({message: "wrong Token/user"})
-        }else{
-            req.user = {
-                _id:user._id,
-                email: user.email,
-                accessLevel: user.accessLevel
-            }
-            next()
+            return 
         }
+        req.user = {
+            _id:user._id,
+            email: user.email,
+            accessLevel: user.accessLevel
+        }
+        next()
+        
     }catch(e){
         res.status(402).json({message : 'not authorized'})
     }

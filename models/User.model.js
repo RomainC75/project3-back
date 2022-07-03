@@ -22,6 +22,10 @@ const userSchema = new Schema(
       type: Boolean,
       default: false,
     },
+    emailValidationCode: {
+      type:Number,
+      required:true
+    }
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`
