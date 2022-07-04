@@ -1,15 +1,26 @@
 const router = require("express").Router();
 const Product = require("../models/Product.model");
-
 const Guitar = require("../models/Guitar.model");
 const String = require("../models/String.model");
 const Woodwind = require("../models/Woodwind.model");
+const Review = require("../models/Review.model");
 
 router.get("/", async (req, res, next) => {
   try {
-    console.log(req.query);
+    //console.log(req.query);
     const ans = await Product.find(req.query);
-    res.status(200).json(ans);
+    const ansPlusGlobalRate = await Promise.all(ans.map(async(product)=>{
+      const reviews = await Review.find({productId:product._id})
+      const globalRate = reviews.reduce((accu, current)=>{
+        return accu+current.rate
+      },0)
+      const myproduct = product.toObject()
+      return {
+        ...myproduct,
+        globalRate: reviews.length===0 ? 0 : globalRate/reviews.length,
+      }
+    }))
+    res.status(200).json(ansPlusGlobalRate);
   } catch (e) {
     next(e);
   }
