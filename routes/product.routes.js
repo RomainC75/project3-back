@@ -18,6 +18,7 @@ router.get("/", async (req, res, next) => {
       return {
         ...myproduct,
         globalRate: reviews.length===0 ? 0 : globalRate/reviews.length,
+        reviewsQty:reviews.length
       }
     }))
     res.status(200).json(ansPlusGlobalRate);
@@ -41,9 +42,13 @@ router.get("/:id", async (req, res, next) => {
       res.status(400).json({ message: "ID not found !" });
       return
     }
-    res.status(200).json(ans);
+    const reviews= await Review.find({productId:id})
+    const ansToSend = ans.toObject()
+    res.status(200).json({
+      ...ansToSend,
+      reviews:reviews
+    });
   } catch (e) {
-    console.log(e);
     next(e);
   }
 });
