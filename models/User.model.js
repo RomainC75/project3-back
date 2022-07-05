@@ -12,7 +12,7 @@ const userSchema = new Schema(
     firstName: String,
     lastName: String,
     address: {
-      addressNumber: Number,
+      number: Number,
       street: String,
       zipcode: Number,
       city: String,

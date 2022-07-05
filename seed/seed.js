@@ -51,7 +51,7 @@ const seed = async () =>{
         await Guitar.deleteMany()
         await Woodwind.deleteMany()
         await String.deleteMany()
-        await User.deleteMany({"email":{$ne:"sponge.b0b@gmail.com"}})
+        await User.deleteMany({"email":{$ne:"sponge.b0b@gmail.com"}}) // ajouter son mail
         await Review.deleteMany()
 
         const guitarAns = await Guitar.insertMany(guitarList)
