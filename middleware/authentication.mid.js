@@ -4,8 +4,8 @@ require('dotenv').config()
 const User = require('../models/User.model')
 
 router.use( async (req,res,next)=>{
-    console.log(req.headers.authorization)
     try{
+        console.log('received Authorization : ', req.headers.authorization)
         const token = req.headers.authorization.split(' ')[1]
         const data = jwt.verify(token,process.env.TOKEN_SECRET)
         const user = await User.findById(data.userId)
@@ -21,7 +21,7 @@ router.use( async (req,res,next)=>{
         next()
         
     }catch(e){
-        res.status(402).json({message : 'not authorized'})
+        res.status(402).json({message : 'not authorized :-('})
     }
 })
 
