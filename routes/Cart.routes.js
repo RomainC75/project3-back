@@ -14,6 +14,18 @@ router.get("/", authentication, async (req, res, next) => {
   }
 });
 
+router.get("/pending", authentication, async (req, res, next) => {
+  console.log('mono')
+  try {
+    console.log(req.user._id);
+    const userCart = await Cart.find({ userId: req.user._id }).populate('products.productId');
+
+    return res.json(userCart.find(cart=>cart.status==="Pending"));
+  } catch (error) {
+    next(error);
+  }
+});
+
 router.get("/:cartId", authentication, async (req, res, next) => {
   console.log(req.user);
   try {
