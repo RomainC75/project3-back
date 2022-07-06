@@ -21,11 +21,13 @@ router.get("/", async (req, res, next) => {
         reviewsQty:reviews.length
       }
     }))
+    
     res.status(200).json(ansPlusGlobalRate);
   } catch (e) {
     next(e);
   }
 });
+
 
 router.get("/:id", async (req, res, next) => {
   try {

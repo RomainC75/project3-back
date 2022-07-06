@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const Cart = require("../models/Cart.model");
+const Product = require('../models/Product.model')
 const authentication = require("../middleware/authentication.mid");
 const id24FormatCheck = require("../middleware/id24FormatCheck.mid");
 const { json } = require("express");
@@ -8,7 +9,7 @@ router.get("/", authentication, async (req, res, next) => {
   try {
     console.log(req.user._id);
     const userCart = await Cart.find({ userId: req.user._id }).populate('products.productId');
-    return res.json(userCart);
+    res.status(200).json(userCart);
   } catch (error) {
     next(error);
   }
@@ -18,9 +19,9 @@ router.get("/pending", authentication, async (req, res, next) => {
   console.log('mono')
   try {
     console.log(req.user._id);
-    const userCart = await Cart.find({ userId: req.user._id }).populate('products.productId');
-
-    return res.json(userCart.find(cart=>cart.status==="Pending"));
+    const userCart = await Cart.find({ userId: req.user._id });
+    const result = userCart.find(cart=>cart.status==="Pending")
+    res.status(202).json(result ? result : {message:'nothing'});
   } catch (error) {
     next(error);
   }
@@ -35,7 +36,7 @@ router.get("/:cartId", authentication, async (req, res, next) => {
       return;
     }
 
-    const userCart = await Cart.find({ _id: cartId, userId: req.user._id });
+    const userCart = await Cart.find({ _id: cartId, userId: req.user._id }).populate('products.productId');
     if (userCart.length === 0) {
       res.status(404).json({ message: "cart not found" });
       return;
@@ -48,6 +49,7 @@ router.get("/:cartId", authentication, async (req, res, next) => {
 
 //
 router.post("/", authentication, async (req, res, next) => {
+  console.log('---->body', req.body)
   try {
     const userCart = await Cart.find({
       userId: req.user._id,
