@@ -21,7 +21,7 @@ router.use( async (req,res,next)=>{
         next()
         
     }catch(e){
-        res.status(402).json({message : 'not authorized'})
+        res.status(403).json({message : 'not authorized'})
     }
 })
 
