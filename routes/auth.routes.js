@@ -46,6 +46,7 @@ router.post("/signup", possibleCredentials, async (req, res, next) => {
       email,
       password: hash,
       emailValidationCode,
+      address : {country :"", number : "", street : "", zipcode : "", city : "" }
     });
     console.log("user ID : ", ans);
     const wishListAns = await Wishlist.create({
