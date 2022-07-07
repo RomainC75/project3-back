@@ -7,7 +7,6 @@ const { json } = require("express");
 
 router.get("/", authentication, async (req, res, next) => {
   try {
-    console.log(req.user._id);
     const userCart = await Cart.find({ userId: req.user._id }).populate('products.productId');
     res.status(200).json(userCart);
   } catch (error) {
@@ -16,9 +15,8 @@ router.get("/", authentication, async (req, res, next) => {
 });
 
 router.get("/pending", authentication, async (req, res, next) => {
-  console.log('mono')
+
   try {
-    console.log(req.user._id);
     const userCart = await Cart.find({ userId: req.user._id });
     const result = userCart.find(cart=>cart.status==="Pending")
     res.status(202).json(result ? result : {message:'nothing'});
@@ -28,7 +26,6 @@ router.get("/pending", authentication, async (req, res, next) => {
 });
 
 router.get("/:cartId", authentication, async (req, res, next) => {
-  console.log(req.user);
   try {
     const { cartId } = req.params;
     if (cartId.length != 24) {
@@ -49,7 +46,6 @@ router.get("/:cartId", authentication, async (req, res, next) => {
 
 //
 router.post("/", authentication, async (req, res, next) => {
-  console.log('---->body', req.body)
   try {
     const userCart = await Cart.find({
       userId: req.user._id,
@@ -78,7 +74,6 @@ router.patch(
   async (req, res, next) => {
     try {
       const { cartId } = req.params;
-      console.log("cartId : ", cartId);
       const foundCart = await Cart.findById(cartId);
 
       if (foundCart === null) {
@@ -118,7 +113,6 @@ router.patch(
 router.put("/:cartId", authentication, async (req, res, next) => {
   try {
     const { cartId } = req.params;
-    console.log("cartId : ", cartId);
     const foundCart = await Cart.findById(cartId);
 
     if (foundCart === null) {
@@ -147,7 +141,6 @@ router.delete("/:cartId", authentication, async (req, res, next) => {
   try {
     const { cartId } = req.params;
 
-    console.log(cartId, req.user._id);
     const foundCart = await Cart.find({ _id: cartId, userId: req.user._id });
     if (foundCart.length === 0) {
       res.status(404).json({ message: "cart not found !" });

@@ -7,7 +7,7 @@ const Review = require("../models/Review.model");
 
 router.get("/", async (req, res, next) => {
   try {
-    //console.log(req.query);
+
     const ans = await Product.find(req.query);
     const ansPlusGlobalRate = await Promise.all(ans.map(async(product)=>{
       const reviews = await Review.find({productId:product._id})
@@ -32,7 +32,6 @@ router.get("/", async (req, res, next) => {
 router.get("/:id", async (req, res, next) => {
   try {
     const { id } = req.params;
-    console.log("id", id);
     if (id.length != 24) {
       res.status(400).json({
         message: "bad ID length",

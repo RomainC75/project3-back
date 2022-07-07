@@ -5,7 +5,6 @@ const path = require('path');
 
 router.get('/:token',async (req,res,next)=>{
     try {
-        console.log('---> verification :')
         
         const {token}=req.params
         let tokenData = {}
@@ -36,7 +35,6 @@ router.get('/:token',async (req,res,next)=>{
 
         })
         res.status(200).sendFile(path.join(__dirname, '../pages/emailValidated.html'));
-        console.log("tokenData : ", tokenData)
 
     } catch (error) {
         next(error)
