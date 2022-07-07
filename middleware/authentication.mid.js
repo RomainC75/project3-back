@@ -5,7 +5,6 @@ const User = require('../models/User.model')
 
 router.use( async (req,res,next)=>{
     try{
-        console.log('received Authorization : ', req.headers.authorization)
         const token = req.headers.authorization.split(' ')[1]
         const data = jwt.verify(token,process.env.TOKEN_SECRET)
         const user = await User.findById(data.userId)

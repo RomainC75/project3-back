@@ -20,9 +20,6 @@ const usersList = require('./dataUser.json')
 const reviewsCreation = async (guitarName) =>{
     //create reviews about "guitarName"
     const [guitarFound] = await Product.find({name:guitarName})
-    console.log('---->',guitarName,guitarFound)
-    //console.log(guitarFound)
-    console.log('LENGTH : ',usersList.length)
     await Promise.all(usersList.map( async (user)=>{
         const lorem = new LoremIpsum({
             sentencesPerParagraph: {
@@ -73,7 +70,6 @@ const seed = async () =>{
         const answer = await Product.find({__t:"GuitarSchema"})
         
         await Promise.all( guitarList.map(async(guitar,i)=>{
-            //console.log('---->','i:',i,'++++',guitar)
             await reviewsCreation(guitar.name)
         }))
         

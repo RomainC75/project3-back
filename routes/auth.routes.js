@@ -8,7 +8,7 @@ const authentication = require("../middleware/authentication.mid");
 const Wishlist = require("../models/Wishlist.model");
 
 require("dotenv").config();
-console.log("inside : ", process.env.EMAILEE, process.env.EMAILEE_PASS);
+
 
 let transporter = nodemailer.createTransport({
   service: "Gmail",
@@ -20,7 +20,6 @@ let transporter = nodemailer.createTransport({
 
 router.get("/verify", authentication, async (req, res, next) => {
   try {
-    console.log("VERIFY : --->", req.user);
     res.status(200).json({ user: req.user });
   } catch (e) {
     next(e);
@@ -32,7 +31,7 @@ router.post("/signup", possibleCredentials, async (req, res, next) => {
   try {
     const { email, password } = req.body;
     const recordedUser = await User.findOne({ email });
-    console.log("recordedUser", recordedUser);
+
     if (recordedUser !== null) {
       res
         .status(400)
@@ -48,7 +47,6 @@ router.post("/signup", possibleCredentials, async (req, res, next) => {
       emailValidationCode,
       address : {country :"", number : "", street : "", zipcode : "", city : "" }
     });
-    console.log("user ID : ", ans);
     const wishListAns = await Wishlist.create({
       userId: ans._id,
       products: [],
@@ -97,7 +95,6 @@ router.post("/signin", possibleCredentials, async (req, res, next) => {
       res.status(404).json({ message: "email not validated" });
       return;
     }
-    console.log("recordedUser._id", recordedUser._id);
     res.status(200).json({
       userId: recordedUser._id,
       token: jwt.sign({ userId: recordedUser._id }, process.env.TOKEN_SECRET, {

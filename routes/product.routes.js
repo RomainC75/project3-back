@@ -9,7 +9,7 @@ const authentication = require('../middleware/authentication.mid')
 
 router.get("/", async (req, res, next) => {
   try {
-    //console.log(req.query);
+
     const ans = await Product.find(req.query);
     const ansPlusGlobalRate = await Promise.all(ans.map(async(product)=>{
       const reviews = await Review.find({productId:product._id})

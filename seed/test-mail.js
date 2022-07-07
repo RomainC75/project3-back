@@ -16,5 +16,5 @@ let transporter = nodemailer.createTransport({
     text: 'Awesome Message',
     html: '<b>Awesome Message</b> <a href="www.google.com">Click on the link below :</a>'
   })
-  .then(info => console.log('-->ENVOYE !!',info))
+  .then(info => console.log('-->ENVOYE !!'))
   .catch(error => console.log('-->ERRORRRRRRR ',error))

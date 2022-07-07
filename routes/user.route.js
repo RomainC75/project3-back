@@ -24,7 +24,6 @@ router.put("/", authentication, async (req, res, next) => {
     "address",
     "isMailValidated",
   ];
-  console.log(req.body);
   const wrongFields = Object.keys(req.body).filter(
     (key) => !availableKeys.includes(key)
   );
@@ -47,7 +46,6 @@ router.put("/", authentication, async (req, res, next) => {
 
 //delete wishlist and cartS at the same time
 router.delete("/", authentication, async (req, res, next) => {
-  console.log(req.body);
   try {
     //delete all Carts
     const foundCarts = await Cart.find({ userId: req.user._id });
