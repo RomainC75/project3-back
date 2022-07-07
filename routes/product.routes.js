@@ -4,6 +4,8 @@ const Guitar = require("../models/Guitar.model");
 const String = require("../models/String.model");
 const Woodwind = require("../models/Woodwind.model");
 const Review = require("../models/Review.model");
+const id24FormatCheck = require('../middleware/id24FormatCheck.mid')
+const authentication = require('../middleware/authentication.mid')
 
 router.get("/", async (req, res, next) => {
   try {
@@ -29,33 +31,21 @@ router.get("/", async (req, res, next) => {
 });
 
 
-router.get("/:id", async (req, res, next) => {
+router.get("/:id", id24FormatCheck, async (req, res, next) => {
+  const {id} = req.params
   try {
-    const { id } = req.params;
-    console.log("id", id);
-    if (id.length != 24) {
-      res.status(400).json({
-        message: "bad ID length",
-      });
-      return;
-    }
     const ans = await Product.findById(id);
     if (ans === null) {
-      res.status(400).json({ message: "ID not found !" });
+      res.status(404).json({ message: "ID not found !" });
       return
     }
-    const reviews= await Review.find({productId:id})
-    const ansToSend = ans.toObject()
-    res.status(200).json({
-      ...ansToSend,
-      reviews:reviews
-    });
+    res.status(200).json(ans)
   } catch (e) {
     next(e);
   }
 });
 
-router.post("/:family", async (req, res, next) => {
+router.post("/:family", authentication,async (req, res, next) => {
   try {
     const families = ["woodwind", "guitar", "string"];
     const { family } = req.params;
@@ -81,13 +71,9 @@ router.post("/:family", async (req, res, next) => {
   }
 });
 
-router.put("/:id", async (req, res, next) => {
+router.put("/:id", id24FormatCheck,authentication, async (req, res, next) => {
   try {
     const { id } = req.params;
-    if (id.length !== 24) {
-      res.status(400).json({ message: "bad id length" });
-      return
-    }
     const item = await Product.findById(id);
     if (item === null) {
       res.status(400).json({ message: "ID not found !" });
@@ -104,13 +90,10 @@ router.put("/:id", async (req, res, next) => {
   }
 });
 
-router.delete("/:id", async (req, res, next) => {
+router.delete("/:id", id24FormatCheck, authentication, async (req, res, next) => {
   try {
     const { id } = req.params;
-    if (id.length !== 24) {
-      res.status(400).json({ message: "bad id length" });
-      return
-    }
+
     const item = await Product.findById(id);
     if (item === null) {
       res.status(400).json({ message: "ID not found !" });
