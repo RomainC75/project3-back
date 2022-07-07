@@ -23,6 +23,7 @@ const scrape = (url) => {
       if (button) {
         await button.click();
       }
+      
 
       console.log("getting data...");
       const data = await page.evaluate(() => {
